@@ -16,5 +16,6 @@ Below is the list of tools I've used to put together this project.
 
 #### Screen Short Example
 
-![Mar-31-2019 15-52-53-min](https://user-images.githubusercontent.com/31816972/55290124-3db33080-53cf-11e9-8f7f-9ce9c446170a.gif)
+![gifTrello-min](https://user-images.githubusercontent.com/31816972/55290212-9fc06580-53d0-11e9-86f8-fcc5a651a386.gif)
+
 
