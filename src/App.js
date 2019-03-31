@@ -43,8 +43,9 @@ class App extends Component {
         //const bords = [ this.state.newCard, ...this.state.bords.cards]
         const bords = this.state.newCard.concat(this.state.bords)
         this.setState({bords: bords});
-        //return bords;
       }
+
+      
 
       toggleDashHandler = () => {
         const doesShow = this.state.showDash;
@@ -74,12 +75,8 @@ class App extends Component {
 
 		return (
 			<div>
-            <button onClick={this.toggleDashHandler}>Close Dash Dord</button>
-        <div>
-          <form onSubmit={this.addItem}>
-            <button onClick={this.addBoard}>add</button>
-          </form>
-        </div>
+        <button onClick={this.addBoard}>add a new Trello here Board</button>
+        <button onClick={this.toggleDashHandler}>Close Dash Dord</button>
         {bords}
       </div>
        
