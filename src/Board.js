@@ -8,7 +8,11 @@ class Board extends Component {
 
 	constructor(props) {
 		super(props);		
-		this.state = { cards: props.list };
+		this.state = { 
+			cards: props.list,
+			newCard: {di: 1, text: 'text'}
+		 };
+
     }
     
 
@@ -44,6 +48,12 @@ class Board extends Component {
 		}));
 	}
 
+	AddCard = () => {
+		const card =this.state.cards;
+		this.state.newCard.concat(this.state.cards)
+        this.setState({card: card});
+	}
+
 	render() {
 		const { cards } = this.state;
 		const { canDrop, isOver, connectDropTarget } = this.props;
@@ -70,14 +80,9 @@ class Board extends Component {
                                 moveCard={this.moveCard.bind(this)} />
                         );
                     })}
-			    </div>
-                <div className="header">
-          <form onSubmit={this.addItem}>
-            
-            <button onClick={() => this.deleteBoard()}>add</button>
-          </form>
-        </div>
-            </div>
+			    </div>   
+            		<button onClick={() => this.AddCard}>Add Trello card </button>
+            	</div>
 			
 		);
   }
