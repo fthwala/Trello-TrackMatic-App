@@ -3,7 +3,8 @@ body {
   background-color: #66CCFF;
   font-family: sans-serif;
 }
-#container {
+
+/* #container {
   display: flex;
   justify-content: center;
 }
@@ -19,4 +20,4 @@ button {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-}
+} */

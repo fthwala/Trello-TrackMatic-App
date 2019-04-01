@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -6,9 +6,65 @@
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
+} */
+
+
+.Board{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* width: 60%; */
+  margin: auto;
+  /* background-color: grey; */
+  text-align: center;
+  margin: 20px;
+  
 }
 
-.App-header {
+.Board1{
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: grey;
+  
+  
+}
+
+
+.InputBoard{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
+.container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.container li{
+  display: inline-block;
+  margin: 20px;
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+}
+
+.container a:hover,
+.container a:active {
+  color: brown;
+}
+
+
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -30,4 +86,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
