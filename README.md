@@ -6,6 +6,7 @@ Below is the list of tools I've used to put together this project.
 
 - ReactJS
 - [React-DnD](https://github.com/react-dnd/react-dnd).
+- react-router-dom/ react-router
 
 #### How to Clone and Run
 
