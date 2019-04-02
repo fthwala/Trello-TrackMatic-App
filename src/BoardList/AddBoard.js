@@ -74,8 +74,10 @@ class AddBoard extends Component {
 
 		return (
 			<div>
+        <div className="Buttons">
         <button onClick={this.addBoard}>add a new Trello here Board</button>
         <button onClick={this.toggleDashHandler}>Close Dash Dord</button>
+        </div>
         {bords}
       </div>
        

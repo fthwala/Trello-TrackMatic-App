@@ -75,7 +75,7 @@ class MainStotyBoard extends Component{
           return(
             <form className="InputBoard" ref="boardForm" onSubmit={this.createBoard}>
             <div className="form-group">
-              <label for="boardItem">
+              <label className="boardItem">
                 <input type="text" id="boardItem" placeholder="Enter Trello Board Name" ref="boardName" className="form-control" />
               </label>
               <button type="submit" className="btn btn-primary">Add Board</button>

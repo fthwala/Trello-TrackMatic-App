@@ -20,6 +20,13 @@
   margin: 20px;
   
 }
+.Buttons{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 60%;
+  margin: auto;
+}
 
 .Board1{
   padding: 40px;
