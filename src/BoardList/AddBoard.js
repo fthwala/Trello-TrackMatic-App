@@ -28,7 +28,7 @@ class AddBoard extends Component {
         newCard: [
           {
             id: 10,
-          cards: [{id: 4, text: 'four'}]
+          cards: []
           }
           
         ],
@@ -38,8 +38,6 @@ class AddBoard extends Component {
       }
     }
       addBoard = () =>{
-        //const bords = this.state.cards.push(this.state.newCard);
-        //const bords = [ this.state.newCard, ...this.state.bords.cards]
         const bords = this.state.newCard.concat(this.state.bords)
         this.setState({bords: bords});
       }

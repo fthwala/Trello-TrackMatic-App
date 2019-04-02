@@ -1,6 +1,6 @@
 import '../App.css';
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 import AddBoard from '../BoardList/AddBoard';
 import MainStotyBoard from '../MainStotyBoard/MainStotyBoard'
 
@@ -11,8 +11,12 @@ class Trello extends Component{
               <header>
                 <nav>
                   <ul>
-                    <li><a href="/">Boards</a></li>
-                    <li><a href="/AddBoard">lists</a></li>
+                    <li><Link to="/">Boards</Link></li>
+                    <li><Link to={{
+                      pathname: '/AddBoard',
+                      hash: '#submit',
+                      search: '?quick-submit=true'
+                    }}>lists</Link></li>
                   </ul>
                 </nav>
               </header>

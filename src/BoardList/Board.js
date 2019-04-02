@@ -10,7 +10,6 @@ class Board extends Component {
 		super(props);		
 		this.state = { 
 			cards: props.list,
-			newCard: {di: 1, text: 'text'}
 		 };
 
     }
@@ -48,11 +47,13 @@ class Board extends Component {
 		}));
 	}
 
-	AddCard = () => {
-		const card =this.state.cards;
-		this.state.newCard.concat(this.state.cards)
-        this.setState({card: card});
-	}
+	AddCard = (card) =>{
+		this.setState(update(this.state, {
+			cards: {
+				$push: [ card ]
+			}
+		}))
+      }
 
 	render() {
 		const { cards } = this.state;
@@ -81,7 +82,7 @@ class Board extends Component {
                         );
                     })}
 			    </div>   
-            		<button onClick={() => this.AddCard}>Add Trello card </button>
+            		<button onClick={this.AddCard}>Add Trello card </button>
             	</div>
 			
 		);

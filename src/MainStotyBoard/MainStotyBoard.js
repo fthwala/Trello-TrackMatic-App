@@ -44,7 +44,7 @@ class MainStotyBoard extends Component{
       if (this.state.showDash){
         bords = (
           Object.keys(this.props.boards).map(function(key) {
-            return <li href="/AddBoard" className="Board1">{<Route path="/AddBoard" component={AddBoard} />}{this.props.boards[key]}</li>
+            return <li href="/AddBoard" className="Board1"><Route path="/AddBoard" component={AddBoard} />{this.props.boards[key]}</li>
             
           }.bind(this))
         );
